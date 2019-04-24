@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.rdmitsolutions.psite7" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PSITE 7 Convention</name>
+    <name>PSITE 7</name>
     <description>
         PSITE 7 Convention Mobile App. View convention schedule and speaker information.
     </description>
