@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PSITE 7</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css"/>
+
+</head>
+<body onload="getPages()">
+
+
+    <!-- Start of first page -->
+    
+    <div data-role="page" id="page01">
+    <div id="div01">
+    <div role="main" class="ui-content">
+        	<p style="text-align: center;"><img src="images/psite7_01.png" style="width: 50%;"><br /><span style="font-weight: bold">15<sup>th</sup> PSITE 7 Regional Convention</span><br />College of Computer Studies, Silliman University<br />May 2-3, 2019</p>
+        	<ul data-role="listview" data-inset="true" data-divider-theme="a" style="margin-top: 30px;">
+        	  <li data-role="list-divider">Programme</li>
+        	  <li><a href="#page02" >May 2 (Thursday)</a></li>
+        	  <li><a href="#page03" >May 3 (Friday)</a></li>
+        	  <li><a href="#page04" data-transition="slide">May 4 (Saturday)</a></li>
+        	</ul>
+        	<ul data-role="listview" data-inset="true" data-divider-theme="a" style="margin-top: 30px;">
+        	  <li data-role="list-divider">Speakers</li>
+        	  <li><a href="#page02" data-transition="slide">Speaker 1</a></li>
+        	  <li><a href="#page03" data-transition="slide">Speaker 2</a></li>
+        	  <li><a href="#page04" data-transition="slide">Speaker 3</a></li>
+        	  <li><a href="#page04" data-transition="slide">Speaker 4</a></li>
+        	  <li><a href="#page04" data-transition="slide">Speaker 5</a></li>
+        	</ul>
+        </div>
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+
+
+
+    <!-- Start of second page -->
+    
+    <div data-role="page" id="page02">
+    <div id="div02">
+        
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    
+    <div data-role="page" id="page03">
+    <div id="div03">
+    </div><!-- /div -->
+    <div id="wait" style="display:none;width:69px;height:89px;position:absolute;top:50%;left:50%;padding:2px;"><img src="css/images/ajax-loader.gif" width="64" height="64" /></div>
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page04">
+    <div id="div04">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page05">
+    <div id="div05">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page06">
+    <div id="div06">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page07">
+    <div id="div07">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page08">
+    <div id="div08">
+    </div><!-- /div -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="page09">
+    <div id="div09">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page10">
+    <div id="div10">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page11">
+    <div id="div11">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page12">
+    <div id="div12">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page13">
+    <div id="div13">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page14">
+    <div id="div14">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page15">
+    <div id="div15">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page16">
+    <div id="div16">
+    </div><!-- /div -->
+    </div><!-- /page -->
+
+    <div data-role="page" id="page17">
+    <div id="div17">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page18">
+    <div id="div18">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page19">
+    <div id="div19">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    <div data-role="page" id="page20">
+    <div id="div20">
+    </div><!-- /div -->
+    </div><!-- /page -->
+    
+    
+    
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript">
+
+    function reloadJavaScripts() {
+        $.getScript("js/jquery.js");          
+        $.getScript("js/jquery.mobile-1.4.5.js");  
+    }
+        
+    
+    function getPages() {
+            $.ajax({
+                type: "POST",
+                url: "https://mobile.psite7.live/getmenus.php",
+                crossDomain: true, 
+                cache: false,
+                success: function(data){
+                    var xdata = JSON.parse(data);   
+                    // localStorage.setItem("Page_01", xdata['page_01']);   
+                    localStorage.setItem("Page_02", xdata['page_02']);   
+                    localStorage.setItem("Page_03", xdata['page_03']);   
+                    localStorage.setItem("Page_04", xdata['page_04']);
+                    localStorage.setItem("Page_05", xdata['page_05']);
+                    localStorage.setItem("Page_06", xdata['page_06']);
+                    localStorage.setItem("Page_07", xdata['page_07']);   
+                    localStorage.setItem("Page_08", xdata['page_08']);
+                    localStorage.setItem("Page_09", xdata['page_09']);
+                    localStorage.setItem("Page_10", xdata['page_10']);
+                    localStorage.setItem("Page_11", xdata['page_11']);
+                    localStorage.setItem("Page_12", xdata['page_12']);
+                    localStorage.setItem("Page_13", xdata['page_13']);   
+                    localStorage.setItem("Page_14", xdata['page_14']);
+                    localStorage.setItem("Page_15", xdata['page_15']);
+                    localStorage.setItem("Page_16", xdata['page_16']);
+                    localStorage.setItem("Page_17", xdata['page_17']);   
+                    localStorage.setItem("Page_18", xdata['page_18']);
+                    localStorage.setItem("Page_19", xdata['page_19']);
+                    localStorage.setItem("Page_20", xdata['page_20']);   
+                    loadPages();         
+                }
+            });   
+            
+        }
+        
+        function loadPages() {
+            var page01 = localStorage.getItem('Page_01');
+            var page02 = localStorage.getItem('Page_02');
+            var page03 = localStorage.getItem('Page_03');
+            var page04 = localStorage.getItem('Page_04');
+            var page05 = localStorage.getItem('Page_05');
+            var page06 = localStorage.getItem('Page_06');
+            var page07 = localStorage.getItem('Page_07');
+            var page08 = localStorage.getItem('Page_08');
+            var page09 = localStorage.getItem('Page_09');
+            var page10 = localStorage.getItem('Page_10');
+            var page11 = localStorage.getItem('Page_11');
+            var page12 = localStorage.getItem('Page_12');
+            var page13 = localStorage.getItem('Page_13');
+            var page14 = localStorage.getItem('Page_14');
+            var page15 = localStorage.getItem('Page_15');
+            var page16 = localStorage.getItem('Page_16');
+            var page17 = localStorage.getItem('Page_17');
+            var page18 = localStorage.getItem('Page_18');
+            var page19 = localStorage.getItem('Page_19');
+            var page20 = localStorage.getItem('Page_20');    
+            if (( page01 != "" ) && ( page01 != null )) {
+            //    document.getElementById('div01').innerHTML = page01;
+            }
+            if (( page02 != "" ) && ( page02 != null )) {
+                document.getElementById('div02').innerHTML = page02;
+            }
+            if (( page03 != "" ) && ( page03 != null )) {
+                document.getElementById('div03').innerHTML = page03;
+            }
+            if (( page04 != "" ) && ( page04 != null )) {
+                document.getElementById('div04').innerHTML = page04;
+            }
+            if (( page05 != "" ) && ( page05 != null )) {
+                document.getElementById('div05').innerHTML = page05;
+            }
+            if (( page06 != "" ) && ( page06 != null )) {
+                document.getElementById('div06').innerHTML = page06;
+            }
+            if (( page07 != "" ) && ( page07 != null )) {
+                document.getElementById('div07').innerHTML = page07;
+            }
+            if (( page08 != "" ) && ( page08 != null )) {
+                document.getElementById('div08').innerHTML = page08;
+            }
+            if (( page09 != "" ) && ( page09 != null )) {
+                document.getElementById('div09').innerHTML = page09;
+            }
+            if (( page10 != "" ) && ( page10 != null )) {
+                document.getElementById('div10').innerHTML = page10;
+            }
+            if (( page11 != "" ) && ( page11 != null )) {
+                document.getElementById('div11').innerHTML = page11;
+            }
+            if (( page12 != "" ) && ( page12 != null )) {
+                document.getElementById('div12').innerHTML = page12;
+            }
+            if (( page13 != "" ) && ( page13 != null )) {
+                document.getElementById('div13').innerHTML = page13;
+            }
+            if (( page14 != "" ) && ( page14 != null )) {
+                document.getElementById('div14').innerHTML = page14;
+            }
+            if (( page15 != "" ) && ( page15 != null )) {
+                document.getElementById('div15').innerHTML = page15;
+            }
+            if (( page16 != "" ) && ( page16 != null )) {
+                document.getElementById('div16').innerHTML = page16;
+            }
+            if (( page17 != "" ) && ( page17 != null )) {
+                document.getElementById('div17').innerHTML = page17;
+            }
+            if (( page18 != "" ) && ( page18 != null )) {
+                document.getElementById('div18').innerHTML = page18;
+            }
+            if (( page19 != "" ) && ( page19 != null )) {
+                document.getElementById('div19').innerHTML = page19;
+            }
+            if (( page20 != "" ) && ( page20 != null )) {
+                document.getElementById('div20').innerHTML = page20;
+            }
+            
+            
+            reloadJavaScripts(); 
+            
+            
+        }
+    
+</script>
+<script type="text/javascript">
+    $(document).ready( function(){ 
+        $(document).ajaxStart(function(){
+            $("#wait").css("display", "block");
+        });
+        $(document).ajaxComplete(function(){ 
+            $("#wait").css("display", "none");
+        });
+    });
+</script>
+</html>
