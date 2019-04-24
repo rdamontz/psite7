@@ -1,4 +1,4 @@
-# A Blank PhoneGap App
+# PSITE 7 Convention App
 
 ## Usage
 
