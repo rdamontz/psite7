@@ -1,4 +1,4 @@
-# PSITE 7 Convention App
+# PSITE-7 Convention App
 
 ### Desktop
 
