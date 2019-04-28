@@ -64,16 +64,16 @@
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
     </platform>
-    <access origin="http://mobileapp.ghiconferences.com" />
-    <access origin="http://mobileapp.ghiconferences.com/pics" />
-    <allow-intent href="http://mobileapp.ghiconferences.com" />
+    <access origin="https://psite7.live" />
+    <access origin="https://mobile.psite7.live" />
+    <allow-intent href="https://mobile.psite7.live" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <allow-navigation href="http://ghiconferences.com/*" />
+    <allow-navigation href="https://psite7.live/*" />
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
