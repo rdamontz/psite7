@@ -2,7 +2,7 @@
 <widget id="com.rdmitsolutions.psite7" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>PSITE-7</name>
     <description>
-        PSITE-7 Convention Mobile App. View convention schedule and speaker information.
+        PSITE-7 Convention Mobile App. View convention schedule, speaker information, and paper presenters.
     </description>
     <author email="ritche@rdmitsolutions.com" href="https://rdmitsolutions.com">
         Ritche D Montenegro
